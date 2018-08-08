@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <zip destfile="/home/ec2-user/mavenproj/loan/target/app.zip">
+    <zipfileset dir="/home/ec2-user/mavenproj/loan/target/docker"/>
+    <zipfileset includes="loan.jar" dir="/home/ec2-user/mavenproj/loan/target"/>
+  </zip>
+</target>
+</project>
